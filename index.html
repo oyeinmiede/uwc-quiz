@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.svg" />
+    <title>UWC Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="site-header">
+            <div class="brand"><span class="dot"></span> UWC Quiz</div>
+        </header>
+
+        <section class="hero">
+            <h1>Get exam-ready, one quiz at a time.</h1>
+            <p>
+                Pick a University-Wide Course below, choose how many questions and how
+                much time you want, and go. Your last 10 attempts are saved right here
+                on this device.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>Your Courses</h2>
+            </div>
+            <div class="grid" id="course-grid"></div>
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>Previous Attempts</h2>
+                <button class="btn btn-ghost btn-sm" id="clear-attempts">
+                    Clear history
+                </button>
+            </div>
+            <div class="attempts-list" id="attempts-list"></div>
+        </section>
+
+        <p class="footer-note">
+            Runs entirely in your browser — no account, no backend. Your data stays
+            on this device.
+        </p>
+    </div>
+
+    <!-- Exam-over / info modal -->
+    <div class="modal-overlay hidden" id="modal-overlay">
+        <div class="modal-box" id="modal-box"></div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
