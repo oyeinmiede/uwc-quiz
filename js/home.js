@@ -1,7 +1,3 @@
-// import { inject } from '@vercel/analytics';
-
-// inject();
-
 function isExamOver(course) {
     return new Date(course.examDate).getTime() < Date.now();
 }
